@@ -18,9 +18,9 @@ function loadTasks() {
     } else {
         // 默认示例数据
         tasks = {
-            todo: ['写第一行代码', '设计 Logo'],
-            doing: ['正在做 Kanban'],
-            done: ['启动项目']
+            todo: ['Dentist Demo Landing Page', 'Calculator App', 'Solana Token Launch?'],
+            doing: [],
+            done: ['Create WhatsApp Link Gen', 'Setup PM2', 'Create Kanban', 'Deploy on VPS']
         };
     }
 }
