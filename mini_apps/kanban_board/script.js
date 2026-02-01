@@ -98,6 +98,15 @@ function drop(ev) {
     tasks[oldStatus].splice(oldIndex, 1); // 删旧
     tasks[newStatus].push(taskText);      // 加新
     
+    // 🎉 撒花特效：如果是移动到 'done'
+    if (newStatus === 'done' && oldStatus !== 'done') {
+        confetti({
+            particleCount: 100,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
+    }
+
     saveTasks();
     renderBoard();
 }

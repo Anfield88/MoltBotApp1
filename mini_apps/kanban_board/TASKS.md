@@ -16,11 +16,9 @@
 - [ ] **Logic:** Create `script.js` to handle adding tasks and moving them.
 - [ ] **Persistence:** Save tasks to `localStorage` (so they survive refresh).
 
-### Phase 2: The Backend (FastAPI Integration) - *Wait for approval*
-- [ ] Create `backend.py` with FastAPI.
-- [ ] API Endpoint: `GET /tasks` (Load tasks).
-- [ ] API Endpoint: `POST /tasks` (Save tasks).
-- [ ] Connect Frontend to Backend.
+### Phase 2: Feature Upgrades (Fun & Sync)
+- [ ] **Confetti Effect:** Add "canvas-confetti" library to trigger celebration when task is moved to Done. 🎊
+- [ ] **Backend Integration:** (Pending) Sync tasks to server.
 
 ### Phase 3: Deployment
 - [ ] Test on VPS port 8000.
