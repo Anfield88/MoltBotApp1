@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Anna! 🎂</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="photo-frame">
+            <img src="cover.jpg" alt="Thanos & Anna">
+        </div>
+        
+        <h1>Happy Birthday Anna! 💖</h1>
+        <p class="message">Wishing you a day filled with love, laughter, and unforgettable moments. You make the world brighter! ✨</p>
+        
+        <div class="actions">
+            <button class="btn-wish" onclick="blastConfetti()">🎉 Send Love</button>
+            <a href="https://wa.me/?text=Happy%20Birthday%20Anna!%20%F0%9F%8E%89%E2%9D%A4%EF%B8%8F%20Hope%20you%20have%20an%20amazing%20day!" target="_blank" class="btn-wa">💌 Send Wish via WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        // Auto confetti on load
+        window.onload = function() {
+            var duration = 3 * 1000;
+            var animationEnd = Date.now() + duration;
+            var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+            function randomInRange(min, max) {
+              return Math.random() * (max - min) + min;
+            }
+
+            var interval = setInterval(function() {
+              var timeLeft = animationEnd - Date.now();
+
+              if (timeLeft <= 0) {
+                return clearInterval(interval);
+              }
+
+              var particleCount = 50 * (timeLeft / duration);
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+              confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+            }, 250);
+        };
+
+        function blastConfetti() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#ff69b4', '#ff1493', '#ffd700']
+            });
+        }
+    </script>
+</body>
+</html>

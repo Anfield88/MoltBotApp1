@@ -18,9 +18,9 @@ function loadTasks() {
     } else {
         // 默认示例数据
         tasks = {
-            todo: ['Dentist Demo Landing Page', 'Calculator App', 'Solana Token Launch?'],
+            todo: ['Anna Birthday Page 🎉', 'Calculator App', 'Solana Token Launch?'],
             doing: [],
-            done: ['Create WhatsApp Link Gen', 'Setup PM2', 'Create Kanban', 'Deploy on VPS']
+            done: ['Dentist Demo Landing Page', 'Create WhatsApp Link Gen', 'Setup PM2', 'Create Kanban']
         };
     }
 }
