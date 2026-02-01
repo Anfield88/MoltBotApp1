@@ -1,18 +1,11 @@
-Traceback (most recent call last):
-  File "<frozen runpy>", line 198, in _run_module_as_main
-  File "<frozen runpy>", line 88, in _run_code
-  File "/usr/lib/python3.12/http/server.py", line 1314, in <module>
-    test(
-  File "/usr/lib/python3.12/http/server.py", line 1261, in test
-    with ServerClass(addr, HandlerClass) as httpd:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/socketserver.py", line 457, in __init__
-    self.server_bind()
-  File "/usr/lib/python3.12/http/server.py", line 1308, in server_bind
-    return super().server_bind()
-           ^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.12/http/server.py", line 136, in server_bind
-    socketserver.TCPServer.server_bind(self)
-  File "/usr/lib/python3.12/socketserver.py", line 473, in server_bind
-    self.socket.bind(self.server_address)
-OSError: [Errno 98] Address already in use
+nohup: ignoring input
+161.142.118.139 - - [01/Feb/2026 05:21:56] "GET / HTTP/1.1" 200 -
+161.142.118.139 - - [01/Feb/2026 05:21:56] "GET / HTTP/1.1" 200 -
+161.142.118.139 - - [01/Feb/2026 05:21:56] "GET /style.css HTTP/1.1" 304 -
+161.142.118.139 - - [01/Feb/2026 05:21:56] "GET /script.js HTTP/1.1" 200 -
+161.142.118.139 - - [01/Feb/2026 05:22:15] "GET / HTTP/1.1" 200 -
+207.46.13.231 - - [01/Feb/2026 05:24:10] code 404, message File not found
+207.46.13.231 - - [01/Feb/2026 05:24:10] "GET /robots.txt HTTP/1.1" 404 -
+40.77.167.143 - - [01/Feb/2026 05:24:20] "GET / HTTP/1.1" 200 -
+65.55.210.255 - - [01/Feb/2026 05:24:22] "GET /script.js HTTP/1.1" 200 -
+40.77.177.80 - - [01/Feb/2026 05:24:22] "GET /style.css HTTP/1.1" 200 -

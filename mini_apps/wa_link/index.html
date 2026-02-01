@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Link Gen 🔗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>WhatsApp Link Generator</h2>
+        <div class="input-group">
+            <label>Phone Number (e.g. 60123456789)</label>
+            <input type="text" id="phone" placeholder="6012..." oninput="generate()">
+        </div>
+        <div class="input-group">
+            <label>Message (Optional)</label>
+            <textarea id="msg" placeholder="Hi, I want to book..." oninput="generate()"></textarea>
+        </div>
+        
+        <div class="result" id="result-box" style="display:none;">
+            <label>Your Link:</label>
+            <div class="link-display">
+                <input type="text" id="final-link" readonly>
+                <button onclick="copyLink()">Copy</button>
+            </div>
+            <a href="#" id="preview-btn" target="_blank" class="btn">Test Link 🚀</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
